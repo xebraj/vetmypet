@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
 
             $table->string('ci');
             $table->string('address')->nullable();
-            $table->string('phone')->nullable();            
+            $table->string('phone_number')->nullable();            
 
             $table->string('role'); // 'admin', 'patient', 'doctor'
 

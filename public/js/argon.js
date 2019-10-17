@@ -962,10 +962,10 @@ var OrdersChart = (function() {
 				}
 			},
 			data: {
-				labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+				labels: ['Lun', 'Mar', 'Miér', 'Jue', 'Vie', 'Sáb', 'Dom'],
 				datasets: [{
-					label: 'Sales',
-					data: [25, 20, 30, 22, 17, 29]
+					label: 'Citas Médicas',
+					data: [25, 20, 30, 22, 17, 29,2]
 				}]
 			}
 		});

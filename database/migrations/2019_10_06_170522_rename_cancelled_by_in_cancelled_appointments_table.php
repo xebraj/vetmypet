@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UserDireccionMigration extends Migration
+class RenameCancelledByInCancelledAppointmentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,8 @@ class UserDireccionMigration extends Migration
      */
     public function up()
     {
-        // Creo el campo address
-            Schema::table('users', function ($table) {
-            $table->string('address');
+        Schema::table('cancelled_appointments', function (Blueprint $table) {
+            $table->renameColumn('cancelled_by', 'cancelled_by_id');
         });
     }
 
@@ -26,9 +25,9 @@ class UserDireccionMigration extends Migration
      */
     public function down()
     {
-        // Elimino el campo address
-        Schema::table('users', function ($table) {
-            $table->dropColumn('address');
+        Schema::table('cancelled_appointments', function (Blueprint $table) {
+            $table->renameColumn('cancelled_by_id', 'cancelled_by');
+        
         });
     }
 }

@@ -48,9 +48,9 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text"><i class="ni ni-mobile-button"></i></span>
                     </div>
-                    <input class="form-control" placeholder="Teléfono" type="tel" name="phone_number" value="{{ old('phone_number') }}" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
-                    <span id="format">Format: xxxx-xxx-xxxx</span>
+                    <input class="form-control " data-toggle="tooltip" data-placement="right" title="Ej: 0424-139-4295" placeholder="Teléfono" type="tel" name="phone_number" value="{{ old('phone_number') }}" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
                   </div>
+
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">
