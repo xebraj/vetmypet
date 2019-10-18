@@ -14,12 +14,12 @@ class UsersTableSeeder extends Seeder
     {
         // 1 
         User::create([
-        'name' => 'Nefersol',
-        'last_name' => 'Guillen',
-        'email' => 'neff.esea@gmail.com',
+        'name' => 'Maria',
+        'last_name' => 'Gonzalez',
+        'email' => 'mggs31@gmail.com',
         'email_verified_at' => now(),
-        'password' => bcrypt('n21494455'), // secret
-        'ci' => '21494455',
+        'password' => bcrypt('1587412'), // secret
+        'ci' => '21311487',
         'address' => '',
         'phone_number' => '',    
         'role' => 'admin'
@@ -30,7 +30,7 @@ class UsersTableSeeder extends Seeder
             'last_name' => 'Test',
             'email' => 'patient@gmail.com',
             'email_verified_at' => now(),
-            'password' => bcrypt('n21494455'), // secret
+            'password' => bcrypt('secret'), // secret
             'ci' => '28434234',
             'address' => '',
             'phone_number' => '',    
@@ -43,8 +43,8 @@ class UsersTableSeeder extends Seeder
             'last_name' => 'Test',
             'email' => 'doctor@gmail.com',
             'email_verified_at' => now(),
-            'password' => bcrypt('n21494455'), // secret
-            'ci' => '21311487',
+            'password' => bcrypt('secret'), // secret
+            'ci' => '21344566',
             'address' => '',
             'phone_number' => '',    
             'role' => 'doctor'
