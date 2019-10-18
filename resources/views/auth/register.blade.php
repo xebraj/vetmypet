@@ -24,7 +24,7 @@
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="ni ni-hat-3"></i></span>
+                  <span class="input-group-text"><i class="ni ni-key-25"></i></span>
                 </div>
                 <input class="form-control" placeholder="Cédula" type="text" name="ci" value="{{ old('ci') }}"  title="Debe contener solo 8 digitos" required autofocus>
               </div>
