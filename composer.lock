@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1c328f1258f868049524059779041ef",
+    "content-hash": "19b5532538a6354b8ed606bc6c33b4a8",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1392,6 +1392,70 @@
                 "storage"
             ],
             "time": "2019-08-24T11:17:19+00:00"
+        },
+        {
+            "name": "miladrahimi/larajwt",
+            "version": "v2.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/miladrahimi/larajwt.git",
+                "reference": "5b35fe572be772e0df96a34b10bb7a2216370bd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/miladrahimi/larajwt/zipball/5b35fe572be772e0df96a34b10bb7a2216370bd4",
+                "reference": "5b35fe572be772e0df96a34b10bb7a2216370bd4",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^5.5",
+                "lcobucci/jwt": "^3.2",
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "~1.0",
+                "orchestra/testbench": "^3.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MiladRahimi\\LaraJwt\\Providers\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "JwtAuth": "MiladRahimi\\LaraJwt\\Facades\\JwtAuth"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MiladRahimi\\LaraJwt\\": "src/MiladRahimi/LaraJwt/",
+                    "MiladRahimi\\LaraJwtTests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Milad Rahimi",
+                    "email": "info@miladrahimi.com",
+                    "homepage": "http://miladrahimi.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JWT authentication tools and guard for Laravel projects",
+            "homepage": "http://miladrahimi.github.io/larajwt",
+            "keywords": [
+                "Authentication",
+                "api",
+                "guard",
+                "jwt",
+                "laravel",
+                "rest"
+            ],
+            "time": "2018-03-26T13:53:57+00:00"
         },
         {
             "name": "monolog/monolog",

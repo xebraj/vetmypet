@@ -71,7 +71,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-5 col-md-6">
                             <h1 class="text-white">
-                                @yield('title', 'Welcome!')
+                                @yield('title', 'Bienvenido!')
                             </h1>
                             <p class="text-lead text-light">
                                 @yield('subtitle')
@@ -95,18 +95,15 @@
             <div class="row align-items-center justify-content-xl-between">
                 <div class="col-xl-6">
                     <div class="copyright text-center text-xl-left text-muted">
-                        &copy; 2018 <a href="/" class="font-weight-bold ml-1">{{ config ('app.name')}} </a>
+                         &copy; 2019 - 2020 <a href="/" class="font-weight-bold ml-1">{{ config ('app.name')}} </a>
                     </div>
+                    
                 </div>
                 <div class="col-xl-6">
                     <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-                        <li class="nav-item">
-                            <a href="https://www.creative-tim.com" class="nav-link" target="_blank">Contactanos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.creative-tim.com/presentation" class="nav-link" target="_blank">Acerca de</a>
-                        </li>
-                        </li>
+                    <div class="text-cenrightter text-xl-right text-muted">
+                    <p> Desarrollado por María Gabriela González Socorro</p>
+                    </div>
                     </ul>
                 </div>
             </div>
