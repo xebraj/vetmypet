@@ -21,14 +21,7 @@
           <form method="POST" action="{{ route('register') }}">
             @csrf
 
-            <div class="form-group">
-              <div class="input-group input-group-alternative mb-3">
-                <div class="input-group-prepend">
-                  <span class="input-group-text"><i class="ni ni-key-25"></i></span>
-                </div>
-                <input class="form-control" placeholder="Cédula" type="text" name="ci" value="{{ old('ci') }}"  title="Debe contener solo 8 digitos" required autofocus>
-              </div>
-            </div>
+            
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -44,6 +37,14 @@
                 </div>
                 <input class="form-control" placeholder="Apellido" type="text" name="last_name" value="{{ old('last_name') }}"  required>
               </div>
+              <div class="form-group">
+              <div class="input-group input-group-alternative mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="ni ni-key-25"></i></span>
+                </div>
+                <input class="form-control" placeholder="Cédula" type="text" name="ci" value="{{ old('ci') }}"  title="Debe contener solo 8 digitos" required autofocus>
+              </div>
+            </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
