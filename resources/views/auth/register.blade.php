@@ -1,7 +1,7 @@
 @extends('layouts.form')
 
 @section('title', 'Registro')
-@section('subtitle', 'Ingresa tus datos para registrarte!')
+@section('subtitle', 'Ingresa tus datos para registrarte')
 
 
 @section('content')
@@ -42,7 +42,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="ni ni-single-02"></i></span>
                 </div>
-                <input class="form-control" placeholder="Apellidos" type="text" name="last_name" value="{{ old('last_name') }}"  required>
+                <input class="form-control" placeholder="Apellido" type="text" name="last_name" value="{{ old('last_name') }}"  required>
               </div>
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
