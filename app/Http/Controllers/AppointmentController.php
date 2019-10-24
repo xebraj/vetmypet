@@ -24,7 +24,7 @@ class AppointmentController extends Controller
             ->paginate(10);
 
             $confirmedAppointments = Appointment::where('status', 'Confirmada')
-            ->paginate(10);
+            ->paginate(10); 
 
             $oldAppointments = Appointment::whereIn('status', [ 'Atendida','Cancelada'])
             ->paginate(10);
