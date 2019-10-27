@@ -3,7 +3,6 @@
 @section('title', 'Registro')
 @section('subtitle', 'Ingresa tus datos para registrarte')
 
-
 @section('content')
 <div class="container mt--8 pb-5">
   <!-- Table -->
@@ -12,7 +11,7 @@
       <div class="card bg-secondary shadow border-0">
         <div class="card-body px-lg-5 py-lg-5">
 
-          @if ($errors->any())
+        @if ($errors->any())
           <div class="alert alert-danger" role="alert">
             {{ $errors->first() }}
           </div>
@@ -21,7 +20,6 @@
           <form method="POST" action="{{ route('register') }}">
             @csrf
 
-            
             <div class="form-group">
               <div class="input-group input-group-alternative mb-3">
                 <div class="input-group-prepend">
@@ -59,7 +57,6 @@
                     </div>
                     <input class="form-control " data-toggle="tooltip" data-placement="right" title="Ej: 0424-139-4295" placeholder="Teléfono" type="tel" name="phone_number" value="{{ old('phone_number') }}" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required>
                   </div>
-
                 </div>
                 <div class="form-group">
                   <div class="input-group input-group-alternative mb-3">

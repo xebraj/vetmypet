@@ -30,7 +30,7 @@
                 <input type="text" name="name" class="form-control" value="{{ old('name') }}" required>
             </div>
             <div class="form-group">
-                    <label for="last_name">Apellidos del paciente</label>
+                    <label for="last_name">Apellido del paciente</label>
                     <input type="text" name="name" class="form-control" value="{{ old('last_name') }}" required>
                 </div>
             <div class="form-group">

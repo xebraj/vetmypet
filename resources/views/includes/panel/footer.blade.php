@@ -8,13 +8,5 @@
                     Desarrollado por María Gabriela González Socorro
             </div>
         </div>
-        <div class="col-xl-6">
-                    <ul class="nav nav-footer justify-content-center justify-content-xl-end">
-                    <div class="text-cenrightter text-xl-right text-muted">
-                    <p> Desarrollado por María Gabriela González Socorro</p>
-                    </div>
-                    </ul>
-        </div>
-        </div>
     </div>
 </footer>
