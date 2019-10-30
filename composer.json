@@ -13,6 +13,7 @@
         "fideloper/proxy": "^4.0",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
+        "lcobucci/jwt": "^3.3",
         "miladrahimi/larajwt": "2.*"
     },
     "require-dev": {
