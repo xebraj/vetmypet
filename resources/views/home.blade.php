@@ -19,7 +19,7 @@
         </div>
     </div>
 
-
+    @if (auth()->user()->role == 'admin')
 <div class="row">
         <div class="col-xl-6 mb-5 mb-xl-0">
             <div class="card shadow">
@@ -32,6 +32,13 @@
                     </div>
                 </div>
                 <div class="card-body">
+                @if (session('notification'))
+                <div class="alert alert-success" role="alert">
+                {{ session('notification') }}
+                </div>
+                 @endif
+
+
                     <form action="{{ url('/fcm/send') }}" method="POST">
                     @csrf
                         <div class="form-group">
@@ -65,5 +72,6 @@
                 </div>
             </div>
         </div>
+        @endif
 </div>
 @endsection
