@@ -63,16 +63,13 @@
                                 <button class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" type="submit" title="Cancelar cita"><i class="ni ni-fat-delete"></i>
                                 </button>
                             </form>
-                            <a href="{{ url('/appointments/'.$appointment->id.'/cancel') }}" class="btn btn-sm btn-danger"><i class="ni ni-fat-delete"></i>
-                            </a>
-                        @else {{-- patient --}}
+                        @endif
                             <form action="{{ url('/appointments/'.$appointment->id.'/cancel') }}" method="POST" class="d-inline-block">
                                 @csrf
                     
                                 <button class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" type="submit" title="Cancelar cita"><i class="ni ni-fat-delete"></i>
                                 </button>
                             </form>
-                        @endif
                     </td>
                 </tr>
                 @endforeach
