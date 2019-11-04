@@ -1,19 +1,7 @@
 /*!
-
 =========================================================
 * Argon Dashboard - v1.0.0
 =========================================================
-
-* Product Page: https://www.creative-tim.com/product/argon-dashboard
-* Copyright 2018 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/argon-dashboard/blob/master/LICENSE.md)
-
-* Coded by www.creative-tim.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
 */
 
 //
@@ -906,81 +894,6 @@ var Charts = (function() {
 
 })();
 
-//
-// Orders chart
-//
-
-var OrdersChart = (function() {
-
-	//
-	// Variables
-	//
-
-	var $chart = $('#chart-orders');
-	var $ordersSelect = $('[name="ordersSelect"]');
-
-
-	//
-	// Methods
-	//
-
-	// Init chart
-	function initChart($chart) {
-
-		// Create chart
-		var ordersChart = new Chart($chart, {
-			type: 'bar',
-			options: {
-				scales: {
-					yAxes: [{
-						ticks: {
-							callback: function(value) {
-								if (!(value % 10)) {
-									//return '$' + value + 'k'
-									return value
-								}
-							}
-						}
-					}]
-				},
-				tooltips: {
-					callbacks: {
-						label: function(item, data) {
-							var label = data.datasets[item.datasetIndex].label || '';
-							var yLabel = item.yLabel;
-							var content = '';
-
-							if (data.datasets.length > 1) {
-								content += '<span class="popover-body-label mr-auto">' + label + '</span>';
-							}
-
-							content += '<span class="popover-body-value">' + yLabel + '</span>';
-							
-							return content;
-						}
-					}
-				}
-			},
-			data: {
-				labels: ['Lun', 'Mar', 'Miér', 'Jue', 'Vie', 'Sáb', 'Dom'],
-				datasets: [{
-					label: 'Citas Médicas',
-					data: [25, 20, 30, 22, 17, 29,2]
-				}]
-			}
-		});
-
-		// Save to jQuery object
-		$chart.data('chart', ordersChart);
-	}
-
-
-	// Init chart
-	if ($chart.length) {
-		initChart($chart);
-	}
-
-})();
 
 //
 // Charts
@@ -991,18 +904,12 @@ var OrdersChart = (function() {
 //
 // Sales chart
 //
-
+/*
 var SalesChart = (function() {
-
 	// Variables
-
 	var $chart = $('#chart-sales');
-
-
 	// Methods
-
 	function init($chart) {
-
 		var salesChart = new Chart($chart, {
 			type: 'line',
 			options: {
@@ -1027,11 +934,9 @@ var SalesChart = (function() {
 							var label = data.datasets[item.datasetIndex].label || '';
 							var yLabel = item.yLabel;
 							var content = '';
-
 							if (data.datasets.length > 1) {
 								content += '<span class="popover-body-label mr-auto">' + label + '</span>';
 							}
-
 							content += '<span class="popover-body-value">$' + yLabel + 'k</span>';
 							return content;
 						}
@@ -1046,18 +951,12 @@ var SalesChart = (function() {
 				}]
 			}
 		});
-
 		// Save to jQuery object
-
 		$chart.data('chart', salesChart);
-
 	};
-
-
 	// Events
-
 	if ($chart.length) {
 		init($chart);
 	}
-
 })();
+*/
