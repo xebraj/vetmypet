@@ -47,35 +47,33 @@
                             <a class="btn btn-sm btn-primary" title="Ver cita" href="{{ url('/appointments/'.$appointment->id) }}">Ver</a>
                         @endif
 
-                        @if ($role == 'doctor' || $role == 'admin') 
-                            <form action="{{ url('/appointments/'.$appointment->id.'/confirm') }}" method="POST" class="d-inline-block">
-                                @csrf
+                        @if ($role == 'doctor' || $role == 'admin')
+            <form action="{{ url('/appointments/'.$appointment->id.'/confirm') }}"
+              method="POST" class="d-inline-block">
+              @csrf
 
-                                <button class="btn btn-sm btn-success" data-toggle="tooltip" data-placement="top" type="submit" title="Confirmar cita"><i class="ni ni-check-bold"></i>
-                                </button>
-                            </form>
-                        @endif
+              <button class="btn btn-sm btn-success" type="submit" 
+                data-toggle="tooltip" title="Confirmar cita">
+                <i class="ni ni-check-bold"></i>
+              </button>
+            </form>
+          @endif
+          
+          <form action="{{ url('/appointments/'.$appointment->id.'/cancel') }}" 
+            method="POST" class="d-inline-block">
+            @csrf
 
-                        @if ($role == 'doctor' || $role == 'admin') 
-                            <form action="{{ url('/appointments/'.$appointment->id.'/cancel') }}" method="POST" class="d-inline-block">
-                                @csrf
-                        
-                                <button class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" type="submit" title="Cancelar cita"><i class="ni ni-fat-delete"></i>
-                                </button>
-                            </form>
-                        @endif
-                            <form action="{{ url('/appointments/'.$appointment->id.'/cancel') }}" method="POST" class="d-inline-block">
-                                @csrf
-                    
-                                <button class="btn btn-sm btn-danger" data-toggle="tooltip" data-placement="top" type="submit" title="Cancelar cita"><i class="ni ni-fat-delete"></i>
-                                </button>
-                            </form>
-                    </td>
-                </tr>
-                @endforeach
-            </tbody>
-        </table>
-    </div>
+            <button class="btn btn-sm btn-danger" type="submit" 
+              data-toggle="tooltip" title="Cancelar cita">
+              <i class="ni ni-fat-delete"></i>
+            </button>
+          </form>          
+        </td>
+      </tr>
+      @endforeach
+    </tbody>
+  </table>
+</div>
 
     <div class="card-body">
             {{ $pendingAppointments->links() }}
