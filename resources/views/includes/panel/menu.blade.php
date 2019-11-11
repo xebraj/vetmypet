@@ -9,7 +9,7 @@
   @if (auth()->user()->role == 'admin')
   <li class="nav-item">
     <a class="nav-link" href="/home">
-      <i class="ni ni-tv-2 text-danger"></i> Dashboard
+      <i class="ni ni-tv-2 text-danger"></i> Inicio
     </a>
   </li>
   <li class="nav-item">
@@ -42,11 +42,6 @@
     <li class="nav-item">
       <a class="nav-link" href="/appointments">
         <i class="ni ni-time-alarm text-primary"></i> Mis citas
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/doctors">
-        <i class="ni ni-single-02 text-red"></i> Mis pacientes
       </a>
     </li>
   @else {{-- patient --}}

@@ -25,7 +25,7 @@
                 <tr>
                     <th scope="col">Nombre</th>
                     <th scope="col">E-mail</th>
-                    <th scope="col">C.I</th>
+                    <th scope="col">Cèdula</th>
                     <th scope="col">Opciones</th>
                 </tr>
             </thead>

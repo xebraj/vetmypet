@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-md-12 mb-4">
       <div class="card">
-          <div class="card-header">Dashboard</div>
+          <div class="card-header">Inicio</div>
 
           <div class="card-body">
               @if (session('status'))
@@ -16,6 +16,7 @@
               Bienvenido! Por favor selecciona una opción del menú lateral izquierdo.
           </div>
       </div>
+      <hr>
   </div>
 
   @if (auth()->user()->role == 'admin')
